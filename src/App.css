@@ -8,8 +8,8 @@
   pointer-events: none;
 }
 
-.App-header {
-  background-color: #282c34;
+.App {
+  background-color:midnightblue;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,4 +30,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.socialPlug{
+  font-size: 1.5rem;
+  color: antiquewhite;
+}
+a:link, a:visited, a:hover{
+  color: antiquewhite;
+}
+
+.footer {
+  position: fixed; 
+  bottom:0%;  
+  width: 100%;
+  box-sizing: border-box;
+  background: black;
 }
