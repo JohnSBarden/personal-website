@@ -44,6 +44,5 @@ a:link, a:visited, a:hover{
   position: fixed; 
   bottom:0%;  
   width: 100%;
-  box-sizing: border-box;
   background: black;
 }

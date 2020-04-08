@@ -1,13 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import LinkedIn from "./LinkedIn";
-import GitHub from "./GitHub";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import "./Carousel/Carousel.scss";
-import { Carousel } from "./Carousel/Carousel";
-import Footer from "./Footer";
+import "./Components/Carousel/Carousel.scss";
+import { Carousel } from "./Components/Carousel/Carousel";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
