@@ -1,5 +1,10 @@
 ![Node.js CI](https://github.com/JohnSBarden/personal-website/workflows/Node.js%20CI/badge.svg?branch=master)
 
+# Welcome!
+
+This repo runs my personal website, [JohnSBarden.com](https://JohnSBarden.com/)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
