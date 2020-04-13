@@ -1,5 +1,4 @@
 import React, { Component, useState, useContext } from "react";
-import { HookTimer } from "../Timer";
 
 const imgUrls = [
   "https://source.unsplash.com/collection/3508426/",
@@ -21,14 +20,12 @@ class Carousel extends Component {
       <div className="carousel">
         <Slide url={imgUrls[this.state.imgIndex]} />
         <span id="renderTimer">The timer shows {this.state.timer}</span>
-        <Timer />
       </div>
     );
   }
 }
 
 function FnCarousel(props) {
-  HookTimer();
   var thisTimer = useContext(props.timer);
   console.log("this timer: ", thisTimer);
 

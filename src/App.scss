@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -9,7 +5,8 @@
 }
 
 .App {
-  background-color:midnightblue;
+  text-align: center;
+  background-color: midnightblue;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -32,17 +29,23 @@
   }
 }
 
-.socialPlug{
+.socialPlug {
   font-size: 1.5rem;
   color: antiquewhite;
 }
-a:link, a:visited, a:hover{
+a:link,
+a:visited,
+a:hover {
   color: antiquewhite;
 }
 
 .footer {
-  position: fixed; 
-  bottom:0%;  
+  position: fixed;
+  bottom: 0%;
   width: 100%;
   background: black;
+}
+
+.playground {
+  max-width: 40rem;
 }
