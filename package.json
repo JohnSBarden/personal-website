@@ -18,7 +18,8 @@
     "react-codepen-prefill-embed": "0.0.2",
     "react-dom": "^16.13.1",
     "react-responsive-carousel": "^3.2.3",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^3.4.1",
+    "sass": "^1.26.3"
   },
   "scripts": {
     "start": "react-scripts start",
