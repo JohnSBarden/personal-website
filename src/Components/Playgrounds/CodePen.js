@@ -11,7 +11,7 @@ function CodePen() {
   return (
     <PrefillEmbed
       className="codepen"
-      penTitle="My sweet demo"
+      penTitle="Demo pen"
       embedHeight="400"
       themeId="31205"
       editable

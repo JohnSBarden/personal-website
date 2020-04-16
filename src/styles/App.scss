@@ -1,3 +1,5 @@
+@import "Tooltip.scss";
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -16,23 +18,19 @@
   color: white;
 }
 
-.App-link {
+.link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  :hover {
+    color: violet;
+    cursor: pointer;
   }
 }
 
-.socialPlug {
-  font-size: 1.5rem;
-  color: antiquewhite;
+.social-badge {
+  margin: 0.2rem;
+  toolti: "test";
 }
+
 a:link,
 a:visited,
 a:hover {
@@ -41,11 +39,10 @@ a:hover {
 
 .footer {
   position: fixed;
+  align-content: center;
   bottom: 0%;
   width: 100%;
-  background: black;
-}
-
-.playground {
-  max-width: 40rem;
+  background-color: #0c0c3a;
+  font-size: 2.5rem;
+  color: antiquewhite;
 }
