@@ -9,7 +9,7 @@ function SocialBadge(props) {
     <a className="link">
       <OverlayTrigger
         placement="top"
-        delay={{ show: 250, hide: 400 }}
+        delay={{ show: 250, hide: 100 }}
         overlay={renderTooltip(props)}
         style={{ backgroundColor: "white" }}
       >
