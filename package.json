@@ -1,7 +1,7 @@
 {
   "name": "website",
   "homepage": "https://johnsbarden.com",
-  "version": "0.1.0",
+  "version": "1.22.4",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
