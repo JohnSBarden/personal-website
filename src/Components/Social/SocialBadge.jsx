@@ -6,18 +6,14 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 
 function SocialBadge(props) {
   return (
-    <a className="link">
+    <a className="link" href={props.url} target="_blank">
       <OverlayTrigger
         placement="top"
         delay={{ show: 250, hide: 100 }}
         overlay={renderTooltip(props)}
         style={{ backgroundColor: "white" }}
       >
-        <FontAwesomeIcon
-          className="social-badge"
-          icon={props.icon} //faLinkedin
-          onClick={() => window.open(props.url, "_blank")}
-        />
+        <FontAwesomeIcon className="social-badge" icon={props.icon} />
       </OverlayTrigger>
     </a>
   );
