@@ -5,13 +5,14 @@ import {
   stripIndent,
 } from "react-codepen-prefill-embed";
 import React from "react";
+import { defaultJS } from "../../resources/defaultPlaygroundJS";
 
 function CodePen() {
   useCodePenEmbed();
   return (
     <PrefillEmbed
       className="codepen"
-      penTitle="My sweet demo"
+      penTitle="Demo pen"
       embedHeight="400"
       themeId="31205"
       editable
@@ -34,30 +35,26 @@ function CodePen() {
       </PrefillLang>
       <PrefillLang lang="scss">
         {stripIndent`
-              $bg: midnightblue;
-              $fontcolor: powderblue;
+              $dark: #1a1d2d;
+              $light: #696a70;
+              $fontcolor: antiquewhite;
               body {
-                background: $bg; 
+                background: $light; 
+                margin: 1rem;
               }
               .app-header {
                   color: $fontcolor;
-
+              }
+              a:link {
+                color: $dark;
+                :hover {
+                  color: violet;
+                  cursor: pointer;
+                }
               }
           `}
       </PrefillLang>
-      <PrefillLang lang="babel">
-        {stripIndent`
-        function App() {
-            return (
-              <div className="App">
-                <p className="app-header">This is just a default CodePen...</p>
-              </div>
-            );
-          }
-          
-ReactDOM.render(<App />, document.getElementById("root"));
-          `}
-      </PrefillLang>
+      <PrefillLang lang="babel">{defaultJS}</PrefillLang>
     </PrefillEmbed>
   );
 }
