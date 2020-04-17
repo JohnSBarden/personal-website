@@ -1,53 +1,56 @@
-import React, { Component, useState, useContext } from "react";
+import { Carousel } from "react-bootstrap";
+import { useState } from "react";
+import React from "react";
+import "./Carousel.scss";
 
-const imgUrls = [
-  "https://source.unsplash.com/collection/3508426/",
-  "https://source.unsplash.com/collection/3508426/",
-  "https://source.unsplash.com/collection/3508426/",
-];
+function MyCarousel() {
+  const [index, setIndex] = useState(0);
 
-class Carousel extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      ...this.state,
-      imgIndex: 0,
-    };
-  }
-
-  render() {
-    return (
-      <div className="carousel">
-        <Slide url={imgUrls[this.state.imgIndex]} />
-        <span id="renderTimer">The timer shows {this.state.timer}</span>
-      </div>
-    );
-  }
-}
-
-function FnCarousel(props) {
-  var thisTimer = useContext(props.timer);
-  console.log("this timer: ", thisTimer);
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
 
   return (
-    <div className="carousel">
-      <Slide />
-      <span id="timer">The timer shows {thisTimer}</span>
-    </div>
+    <Carousel activeIndex={index} onSelect={handleSelect}>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://source.unsplash.com/collection/3508426/720x720?sig=1"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://source.unsplash.com/collection/3508426/720x720?sig=2"
+          alt="Second slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://source.unsplash.com/collection/3508426/720x720?sig=3"
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
   );
 }
 
-const Slide = () => {
-  const [imgIndex, setImgIndex] = useState(0);
-
-  const styling = {
-    backgroundImage: `url(${imgUrls[imgIndex]})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    height: "480px",
-    width: "480px",
-  };
-  return <div className="slide" style={styling}></div>;
-};
-
-export { Carousel, FnCarousel };
+export { MyCarousel };

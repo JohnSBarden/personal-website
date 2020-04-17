@@ -1,4 +1,5 @@
 @import "Tooltip.scss";
+@import "colors.scss";
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -8,27 +9,26 @@
 
 .App {
   text-align: center;
-  background-color: midnightblue;
+  background-color: $dark;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: $fore;
 }
 
 .link {
   color: #61dafb;
   :hover {
-    color: violet;
+    color: $accent;
     cursor: pointer;
   }
 }
 
 .social-badge {
-  margin: 0.2rem;
-  toolti: "test";
+  margin: 0rem 0.2rem;
 }
 
 a:link,
@@ -42,9 +42,9 @@ a:hover {
   align-content: center;
   bottom: 0%;
   width: 100%;
-  background-color: #0c0c3a;
+  background-color: $main;
   font-size: 2.5rem;
-  color: antiquewhite;
+  color: $fore;
 }
 
 .web-border {

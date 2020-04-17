@@ -13,7 +13,7 @@ function Footer() {
       <SocialBadge
         url="https://linkedin.com/in/jbarden/"
         icon={faLinkedin}
-        text="Follow me on LinkedIn"
+        text="Connect with me on LinkedIn"
       />
       <SocialBadge
         url="https://twitter.com/JonnyBMackin/"
@@ -26,7 +26,7 @@ function Footer() {
         text="Code with me on GitHub"
       />
       <SocialBadge
-        url="https://codepen.io/johnsbarden/"
+        url="https://codepen.io/JohnSBarden/"
         icon={faCodepen}
         text="Code with me on CodePen"
       />

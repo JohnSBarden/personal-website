@@ -35,16 +35,18 @@ function CodePen() {
       </PrefillLang>
       <PrefillLang lang="scss">
         {stripIndent`
-              $bg: midnightblue;
+              $dark: #1a1d2d;
+              $light: #696a70;
               $fontcolor: antiquewhite;
               body {
-                background: $bg; 
+                background: $light; 
+                margin: 1rem;
               }
               .app-header {
                   color: $fontcolor;
               }
               a:link {
-                color: powderblue;
+                color: $dark;
                 :hover {
                   color: violet;
                   cursor: pointer;
