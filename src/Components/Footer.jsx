@@ -9,7 +9,7 @@ import { SocialBadge } from "./Social/SocialBadge";
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className="footer web-border">
       <SocialBadge
         url="https://linkedin.com/in/jbarden/"
         icon={faLinkedin}
