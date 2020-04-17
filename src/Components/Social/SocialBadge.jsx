@@ -6,7 +6,12 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 
 function SocialBadge(props) {
   return (
-    <a className="link" href={props.url} target="_blank">
+    <a
+      className="link"
+      href={props.url}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <OverlayTrigger
         placement="top"
         delay={{ show: 250, hide: 100 }}
