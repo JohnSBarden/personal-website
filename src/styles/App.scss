@@ -50,3 +50,10 @@ a:hover {
 .web-border {
   z-index: 999;
 }
+
+#main-body,
+#main-body > .col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

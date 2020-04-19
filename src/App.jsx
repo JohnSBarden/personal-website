@@ -7,15 +7,16 @@ import { Col, Row, Container } from "react-bootstrap";
 
 function App(props) {
   console.log("props in app ", props);
-  // var location = ""; //"https://codepen.io/johnsbarden/pen/BaoyJOB";
   return (
     <Container fluid className="App">
-      <Row>
+      <Row id="main-body">
         <Col>
           <MyCarousel />
         </Col>
+        <Col>
+          <CodePen />
+        </Col>
       </Row>
-      <CodePen />
       <Footer />
     </Container>
   );
