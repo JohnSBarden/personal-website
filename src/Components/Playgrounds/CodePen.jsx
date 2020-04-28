@@ -15,7 +15,7 @@ function CodePen() {
       <PrefillEmbed
         penTitle="Demo pen"
         embedHeight="400"
-        themeId="31205"
+        themeId="39088"
         editable
         tags={["react", "react-docs-demo"]}
         htmlClasses={["loading", "no-js"]}
