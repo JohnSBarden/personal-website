@@ -1,5 +1,6 @@
 @import "Tooltip.scss";
 @import "colors.scss";
+@import "Border.scss";
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -16,12 +17,14 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: $fore;
+  color: $light;
   width: 100%;
+  padding-top: $header-height + 1.5rem;
+  padding-bottom: $footer-height + 0.5rem;
 }
 
 .link {
-  color: #61dafb;
+  color: $light;
   :hover {
     color: $accent;
     cursor: pointer;
@@ -35,21 +38,7 @@
 a:link,
 a:visited,
 a:hover {
-  color: antiquewhite;
-}
-
-.footer {
-  position: fixed;
-  align-content: center;
-  bottom: 0%;
-  width: 100%;
-  background-color: $main;
-  font-size: 2.5rem;
-  color: $fore;
-}
-
-.web-border {
-  z-index: 999;
+  color: $light;
 }
 
 #main-body,
@@ -57,4 +46,5 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.2rem;
 }

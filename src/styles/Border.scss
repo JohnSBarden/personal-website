@@ -1,0 +1,32 @@
+@import "colors.scss";
+
+$header-height: 5rem;
+$footer-height: 2.5rem;
+
+.footer {
+  font-size: $footer-height;
+  bottom: 0%;
+}
+.header {
+  top: 0%;
+}
+.branding {
+  max-height: $header-height;
+}
+.header-link {
+  color: $light;
+  border-radius: 1.5rem;
+  &:hover {
+    color: $accent;
+  }
+}
+
+.web-border {
+  position: fixed;
+  align-content: center;
+  width: 100%;
+  background-color: $main;
+  // font-size: 2.5rem;
+  color: $light;
+  z-index: 999;
+}

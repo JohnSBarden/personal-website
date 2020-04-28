@@ -1,5 +1,4 @@
 import React from "react";
-import { MyCarousel } from "../Carousel/Carousel";
 import { CodePen } from "../Playgrounds/CodePen";
 import { Col, Row } from "react-bootstrap";
 

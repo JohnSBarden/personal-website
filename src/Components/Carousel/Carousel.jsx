@@ -26,18 +26,18 @@ function MyCarousel() {
         <img
           className="d-block w-100"
           src={links[1]}
-          alt="Bike tour of Versailles"
+          alt="Bike tour of Versailles in France 2019"
         />
-        {/*<Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>*/}
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src={links[2]} alt="Halloween" />
+        <img className="d-block w-100" src={links[2]} alt="Halloween 2017" />
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src={links[3]} alt="Sporting KC" />
+        <img
+          className="d-block w-100"
+          src={links[3]}
+          alt="Sporting KC launch party 2020"
+        />
       </Carousel.Item>
     </Carousel>
   );
