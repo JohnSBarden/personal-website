@@ -6,3 +6,11 @@ $light: antiquewhite;
 $accent: #ffd700;
 $accent2: #f082f0;
 $main: #177bb5;
+
+:export {
+  accent: $accent;
+  accent2: $accent2;
+  dark: $dark;
+  halfdark: $halfdark;
+  light: $light;
+}
