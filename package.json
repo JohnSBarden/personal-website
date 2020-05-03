@@ -9,9 +9,11 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
+    "@popperjs/core": "^2.4.0",
     "bootstrap": "^4.4.1",
     "font-awesome": "^4.7.0",
     "husky": "^4.2.5",
+    "jquery": "^3.5.0",
     "node-sass": "^4.13.1",
     "npm-why": "^1.1.9",
     "react": "^16.13.1",
@@ -19,8 +21,11 @@
     "react-codepen-prefill-embed": "0.0.2",
     "react-dom": "^16.13.1",
     "react-responsive-carousel": "^3.2.3",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.1",
+    "require": "^2.4.20",
     "sass": "^1.26.3",
+    "typescript": "^3.8.3",
     "yarn": "^1.22.4"
   },
   "scripts": {

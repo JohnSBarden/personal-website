@@ -1,21 +1,16 @@
 import React from "react";
 import "./styles/App.scss";
-import { MyCarousel } from "./Components/Carousel/Carousel";
-import { CodePen } from "./Components/Playgrounds/CodePen";
 import { Footer } from "./Components/Footer";
-import { Col, Row, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import Main from "./Components/Main";
+import Header from "./Components/Header";
 
 function App(props) {
   console.log("props in app ", props);
-  // var location = ""; //"https://codepen.io/johnsbarden/pen/BaoyJOB";
   return (
     <Container fluid className="App">
-      <Row>
-        <Col>
-          <MyCarousel />
-        </Col>
-      </Row>
-      <CodePen />
+      <Header />
+      <Main />
       <Footer />
     </Container>
   );

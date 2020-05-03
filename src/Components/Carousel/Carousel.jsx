@@ -10,44 +10,34 @@ function MyCarousel() {
     setIndex(selectedIndex);
   };
 
+  const links = [
+    "https://imgur.com/PtGuXNR.jpg",
+    "https://imgur.com/krlIdsU.jpg",
+    "https://imgur.com/5Wvz7sc.jpg",
+    "https://imgur.com/CnJkCDN.jpg",
+  ];
+
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://source.unsplash.com/collection/3508426/720x720?sig=1"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
+        <img className="d-block w-100" src={links[0]} alt="Professional" />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://source.unsplash.com/collection/3508426/720x720?sig=2"
-          alt="Second slide"
+          src={links[1]}
+          alt="Bike tour of Versailles in France 2019"
         />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block w-100" src={links[2]} alt="Halloween 2017" />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://source.unsplash.com/collection/3508426/720x720?sig=3"
-          alt="Third slide"
+          src={links[3]}
+          alt="Sporting KC launch party 2020"
         />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
