@@ -27,8 +27,7 @@ function Home() {
         <Col>
           <p>
             Welcome to my personal website! I wanted to write enough React to
-            have a place to have somewhere to mess around with javascript. I'll
-            use my{" "}
+            have a place to mess around with javascript. I'll use my{" "}
             <a href="/personal" style={linkStyle}>
               Personal Tab
             </a>{" "}
