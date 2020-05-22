@@ -36,9 +36,11 @@
 }
 
 a:link,
-a:visited,
-a:hover {
+a:visited {
   color: $light;
+}
+a:hover {
+  color: $accent;
 }
 
 #main-body,
