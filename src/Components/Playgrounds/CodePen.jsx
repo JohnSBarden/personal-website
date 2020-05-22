@@ -8,8 +8,11 @@ import React from "react";
 import { defaultJS } from "../../resources/defaultPlaygroundJS";
 import "./Playground.scss";
 
-function CodePen() {
+function CodePen(props) {
   useCodePenEmbed();
+  const renderJs = props.babelContent ?? defaultJS;
+  console.log(props, renderJs);
+
   return (
     <div className="code-pen">
       <PrefillEmbed
@@ -25,6 +28,7 @@ function CodePen() {
         scripts={[
           "https://unpkg.com/react@16.8.6/umd/react.development.js",
           "https://unpkg.com/react-dom@16.8.6/umd/react-dom.development.js",
+          "https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/1.0.1/react-bootstrap.min.js",
         ]}
         stylesheets={["https://unpkg.com/normalize.css@8.0.1/normalize.css"]}
       >
@@ -54,7 +58,7 @@ function CodePen() {
               }
           `}
         </PrefillLang>
-        <PrefillLang lang="babel">{defaultJS}</PrefillLang>
+        <PrefillLang lang="babel">{renderJs}</PrefillLang>
       </PrefillEmbed>
     </div>
   );

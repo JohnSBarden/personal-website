@@ -20,7 +20,7 @@ export const useMarked = (markdown, options = defaultOptions) => {
     setHtml(
       options.skipSanitize ? html : sanitizeHTML(html, options.sanitizeOptions)
     );
-  }, [markdown]);
+  }, [markdown, options]);
 
   return html;
 };
