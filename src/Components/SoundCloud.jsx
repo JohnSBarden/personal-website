@@ -11,12 +11,14 @@ export function Soundcloud(props) {
         frameborder="no"
         allow="autoplay"
         src={props.url}
+        title="Fyb"
       ></iframe>
       <div className="sound-cloud-parent">
         <a
           href="https://soundcloud.com/fyb_to_me"
           title="Fyb"
           target="_blank"
+          rel="noopener noreferrer"
           className="sound-cloud-link"
         >
           Fyb
@@ -26,6 +28,7 @@ export function Soundcloud(props) {
           href="https://soundcloud.com/fyb_to_me/sets/trifecta"
           title="Trifecta"
           target="_blank"
+          rel="noopener noreferrer"
           className="sound-cloud-link"
         >
           Trifecta
