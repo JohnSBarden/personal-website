@@ -11,10 +11,9 @@ import "./Playground.scss";
 function CodePen(props) {
   useCodePenEmbed();
   const renderJs = props.babelContent ?? defaultJS;
-  console.log(props, renderJs);
 
   return (
-    <div className="code-pen">
+    <div className="code-pen" id={props.id}>
       <PrefillEmbed
         penTitle="Demo pen"
         embedHeight="400"

@@ -6,7 +6,6 @@ import Main from "./Components/Main";
 import Header from "./Components/Header";
 
 function App(props) {
-  console.log("props in app ", props);
   return (
     <Container fluid className="App">
       <Header />

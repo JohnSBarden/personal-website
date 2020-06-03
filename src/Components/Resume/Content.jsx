@@ -1,20 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "react-bootstrap";
 import { stripIndent } from "react-codepen-prefill-embed";
+import "./Resume.scss";
 
 // Had the content declared here, but
 // Right now they don't render when passing into a child component.
 // Gonna try to move to markdown before long.
 
 export function Content(props) {
-  const [showContent, setShowContent] = useState(false);
-  console.log(showContent, props);
+
+  function handleClick() {
+    props.callback(props.title);
+  }
+
+  const display = props.active === props.title;
+
   return (
     <div>
-      <Button onClick={() => setShowContent(!showContent)}>
+      <Button onClick={handleClick} className="experience-button">
         {props.title}
       </Button>
-      {showContent && <p>{props.contents}</p>}
+      {display && <p>{props.contents}</p>}
     </div>
   );
 }
