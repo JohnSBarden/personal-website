@@ -1,7 +1,7 @@
 import React from "react";
 import { MyCarousel } from "../Carousel/Carousel";
-import { CodePen } from "../Playgrounds/CodePen";
 import { Col, Row } from "react-bootstrap";
+import { Blog } from "../Blog/Blog";
 
 function Personal() {
   return (
@@ -10,7 +10,7 @@ function Personal() {
         <MyCarousel />
       </Col>
       <Col>
-        <CodePen />
+        <Blog />
       </Col>
     </Row>
   );
