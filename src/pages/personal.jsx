@@ -1,7 +1,7 @@
 import React from "react";
-import { MyCarousel } from "../Carousel/Carousel";
+import { MyCarousel } from "../Components/Carousel/Carousel";
 import { Col, Row } from "react-bootstrap";
-import { Blog } from "../Blog/Blog";
+import { Blog } from "../Components/Blog/Blog";
 
 function Personal() {
   return (

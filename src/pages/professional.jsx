@@ -1,8 +1,8 @@
 import React from "react";
-import { CodePen } from "../Playgrounds/CodePen";
-import Resume from "../Resume/Resume";
+import { CodePen } from "../Components/Playgrounds/CodePen";
+import Resume from "../Components/Resume/Resume";
 import { Col, Row } from "react-bootstrap";
-import { defaultJS } from "../Resume/Content";
+import { defaultJS } from "../Components/Resume/Content";
 import "./Pages.scss";
 
 function Professional() {

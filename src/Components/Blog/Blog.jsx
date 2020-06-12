@@ -2,13 +2,18 @@ import { useState, useEffect } from "react";
 import React from "react";
 import "./Blog.scss";
 import { useMarked } from "../../scripts/useMarked";
+// import { Pagination } from 'react-bootstrap';
+
 
 // TODO: Reuse the Carousel component, with the contents being filled by whatever markdown file's name is equal to the index
 function Blog() {
+  // const paginationBasic = (
+  //   <Pagination></Pagination>
+  // );
   const [content, setContent] = useState("There aren't any blog posts ☹");
 
   useEffect(() => {
-    const blogPath = require("./Posts/First.md");
+    const blogPath = require("./posts/First.mdx");
 
     fetch(blogPath)
       .then((response) => {

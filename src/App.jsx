@@ -1,17 +1,9 @@
 import React from "react";
 import "./styles/App.scss";
-import { Footer } from "./Components/Footer";
-import { Container } from "react-bootstrap";
-import Main from "./Components/Main";
-import Header from "./Components/Header";
 
 function App(props) {
   return (
-    <Container fluid className="App">
-      <Header />
-      <Main />
-      <Footer />
-    </Container>
+    <div>woops we shouldn't be here</div>
   );
 }
 

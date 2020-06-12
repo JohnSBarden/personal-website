@@ -5,7 +5,7 @@ import {
   faTwitter,
   faCodepen,
 } from "@fortawesome/free-brands-svg-icons";
-import { SocialBadge } from "./Social/SocialBadge";
+import { SocialBadge } from "../Social/SocialBadge";
 
 function Footer() {
   return (

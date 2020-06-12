@@ -1,7 +1,7 @@
 import React from "react";
-import { MyCarousel } from "../Carousel/Carousel";
+import { MyCarousel } from "../Components/Carousel/Carousel";
 import { Col, Row } from "react-bootstrap";
-import { Soundcloud } from "../SoundCloud";
+import { Soundcloud } from "../Components/SoundCloud";
 
 function Media() {
   return (
