@@ -5,7 +5,7 @@ import { Col, Row } from "react-bootstrap";
 import { Layout } from "../components/layout/Layout";
 // import styles from "../components/layout/Layout.scss"
 
-export function Home() {
+export function error() {
   // const linkStyle = {
   //   textDecoration: "underline",
   //   color: styles.accent,
@@ -15,7 +15,7 @@ export function Home() {
   };
 
   return (
-    <div id="home">
+    <div id="error" className="App">
       <Layout>
         <Row id="main-body">
           <Col style={colStyle}>

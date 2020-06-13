@@ -2,13 +2,29 @@
 @import "colors.scss";
 @import "Border.scss";
 
+// From index.css
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+//
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
 }
 
-.App {
+.layout {
   text-align: center;
   background-color: $dark;
   min-height: 100vh;
@@ -20,10 +36,12 @@
   color: $light;
   padding-top: $header-height + 1.5rem;
   padding-bottom: $footer-height + 0.5rem;
+  max-width:100%;
+  min-width:100%
 }
 
 .link {
-  color: $light;
+  color: $accent2;
   :hover {
     color: $accent;
     cursor: pointer;
@@ -34,14 +52,15 @@
   margin: 0rem 0.2rem;
 }
 
-a:link,
-a:visited {
-  color: $light;
-}
-a:hover {
+a:link{
   color: $accent;
 }
+a:hover,
+a:visited  {
+  color: $accent2;
+}
 
+#intro,
 #main-body,
 #main-body > .col {
   display: flex;
