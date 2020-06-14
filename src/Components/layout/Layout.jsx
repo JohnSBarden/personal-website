@@ -7,7 +7,7 @@ import "./Layout.scss";
 
 
 
-function Layout({ children }) {
+export default function Layout({ children }) {
   return (
     <Container className="layout">
       <Header></Header>
@@ -16,5 +16,3 @@ function Layout({ children }) {
     </Container>
   );
 }
-
-export { Layout };

@@ -3,7 +3,7 @@ import { CodePen } from "../Components/Playgrounds/CodePen";
 import Resume from "../Components/Resume/Resume";
 import { Col, Row } from "react-bootstrap";
 import { defaultJS } from "../Components/Resume/Content";
-import { Layout } from "../components/layout/Layout";
+import Layout from "../components/layout/Layout";
 import "./styles/Pages.scss";
 
 function Professional() {

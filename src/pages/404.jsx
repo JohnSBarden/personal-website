@@ -2,7 +2,7 @@ import React from "react";
 import { MyCarousel } from "../Components/Carousel/Carousel";
 import { CodePen } from "../Components/Playgrounds/CodePen";
 import { Col, Row } from "react-bootstrap";
-import { Layout } from "../components/layout/Layout";
+import Layout from "../components/layout/Layout";
 // import styles from "../components/layout/Layout.scss"
 
 export function error() {
