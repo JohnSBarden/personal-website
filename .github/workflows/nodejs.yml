@@ -25,7 +25,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: yarn install
       - name: Gatsby Build
-      - uses: jzweifel/gatsby-cli-github-action@master
+        uses: jzweifel/gatsby-cli-github-action@master
         with:
           gatsby-arg: build
       - run: yarn test --watchAll=false --ci --passWithNoTests
