@@ -5,15 +5,12 @@ import Blog from "../components/blog/Blog";
 import Layout from "../components/layout/Layout";
 import { graphql, Link } from 'gatsby';
 
-function Personal({ data }) {
+export default function Personal({ data }) {
   const { edges: posts } = data.allMdx;
 
   return (
     <Layout id="personal">
       <Row id="main-body">
-        <Col>
-          <MyCarousel />
-        </Col>
         <Col>
           {posts.map(({ node }) => (
             <div key={node.id}>
@@ -23,14 +20,11 @@ function Personal({ data }) {
               <Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link>
             </div>
           ))}
-          {/* <Blog index={posts} /> */}
         </Col>
       </Row>
     </Layout >
   );
 }
-
-export default Personal;
 
 export const query = graphql`
 {

@@ -5,10 +5,6 @@ import { Col, Row } from "react-bootstrap";
 import Layout from "../components/layout/Layout";
 
 export default function Index() {
-  // const linkStyle = {
-  //   textDecoration: "underline",
-  //   color: styles.accent, 
-  // };
   const colStyle = {
     height: "50%",
   };

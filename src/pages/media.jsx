@@ -4,7 +4,7 @@ import { Col, Row } from "react-bootstrap";
 import { Soundcloud } from "../Components/SoundCloud";
 import Layout from "../components/layout/Layout";
 
-function Media() {
+export default function Media() {
   return (
     <Layout id="media">
       <Row id="main-body">
@@ -23,4 +23,3 @@ function Media() {
   );
 }
 
-export default Media;

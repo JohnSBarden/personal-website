@@ -5,7 +5,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(`
     {
       allMdx(
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { order: ASC, fields: [frontmatter___date] }
         limit: 1000
       ) {
         edges {
@@ -19,7 +19,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       }
     }
   `)
-  console.log(result)
   // Handle errors
   if (result.errors) {
     reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query')
