@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@master
+      - name: Build
+        uses: gastby build
       - name: Deploy to Firebase
         uses: lowply/deploy-firebase@v0.0.2
         env:
