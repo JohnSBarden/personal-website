@@ -1,8 +1,9 @@
 import React from "react";
 import { MyCarousel } from "../Components/Carousel/Carousel";
 import { Col, Row } from "react-bootstrap";
-import Blog from "../Components/Blog/Blog";
+import Blog from "../components/blog/Blog";
 import Layout from "../components/layout/Layout";
+import { graphql, Link } from 'gatsby';
 
 function Personal({ data }) {
   const { edges: posts } = data.allMdx;
@@ -17,9 +18,9 @@ function Personal({ data }) {
           {posts.map(({ node }) => (
             <div key={node.id}>
               <h3>
-                {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
+                {node.frontmatter.title} — {node.frontmatter.date}
               </h3>
-              {" TEST BLOCK "}
+              <Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link>
             </div>
           ))}
           {/* <Blog index={posts} /> */}
@@ -42,6 +43,7 @@ export const query = graphql`
           path
           title
           author
+          slug
         }
         body
       }

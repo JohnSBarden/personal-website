@@ -3,28 +3,40 @@ import React from "react";
 import { graphql } from "gatsby"
 import "./Blog.scss";
 import { useMarked } from "../../scripts/useMarked";
+import Layout from "../layout/Layout";
+import { MDXProvider } from "@mdx-js/react";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 // import { Pagination } from 'react-bootstrap';
 
 
 // TODO: Reuse the Carousel component, with the contents being filled by whatever markdown file's name is equal to the index
-export default function Blog(props) {
+export default function Blog({ data }) {
   // const paginationBasic = (
   //   <Pagination></Pagination>
   // );
-  const [content, setContent] = useState("There aren't any blog posts ☹");
-
-  console.log(props.index, props.allMdx);
-  useEffect(() => {
-    console.log('starting require')
-    const blogPath = require("./posts/First.mdx");
-    console.log(blogPath);
-    fetch(blogPath)
-      .then((response) => {
-        return response.text();
-      })
-      .then(setContent);
-  }, []);
-
-  return <div dangerouslySetInnerHTML={{ __html: useMarked(content) }}></div>;
+  return (
+    <Layout>
+      <div id="blog-post">
+        <h1>{data.mdx.frontmatter.title}</h1>
+        <MDXProvider >
+          <MDXRenderer>{data.mdx.body}</MDXRenderer>
+        </MDXProvider>
+      </div>
+    </Layout>
+  );
+}
+export const query = graphql`
+query BlogContentQuery($id: String) {
+  mdx(id: {eq: $id}) {
+    frontmatter {
+      author
+      date
+      slug
+      title
+    }
+    body
+    rawBody
+  }
 }
 
+`

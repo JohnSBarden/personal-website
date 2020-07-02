@@ -5,8 +5,6 @@ import { Header } from "./Header";
 import { Container } from "react-bootstrap";
 import "./Layout.scss";
 
-
-
 export default function Layout({ children }) {
   return (
     <Container className="layout">
