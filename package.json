@@ -64,7 +64,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "CI=true yarn test"
+      "pre-commit": "CI=true yarn test --passWithNoTests"
     }
   }
 }
