@@ -6,6 +6,9 @@ $footer-height: 2.5rem;
 .footer {
   font-size: $footer-height;
   bottom: 0%;
+  .link{
+    color:$light;
+  }
 }
 .header {
   top: 0%;
@@ -29,4 +32,11 @@ $footer-height: 2.5rem;
   // font-size: 2.5rem;
   color: $light;
   z-index: 999;
+  .header-link {
+    color:$light ;
+  }
+  .header-link:hover{
+      color:$accent;
+  }
+  
 }

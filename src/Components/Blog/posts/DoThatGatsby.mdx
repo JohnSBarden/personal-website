@@ -1,0 +1,24 @@
+---
+author: John S. Barden
+title: Let's Do That Gatsby!
+path: /third
+date: 2020-07-02
+slug: dothatgatsby
+---
+
+
+<img src='https://media3.giphy.com/media/l2QDYW7wm9CsU7DHO/giphy.gif'/>
+
+I wrote this website originally in plain old React.  I did the normal things like bootstrapping from create-react-app, and bootstrapping with React-Bootstrap for some basic formatting.  After customization and personalizing everything, I thought about what the meat of the site would be.  A quick blog space seemed like a good way to add content without having to be original, so let's do it.
+
+But... how do you serve the content to the site?  Do I need to rebuild every time I want to `require()` a new file?  I looked for simple ways to include all files in a folder programmatically, and ultimately it seemed like a weakness of React's.  So rather than brute-force a less-than-ideal way of importing any number of files I include in my project structure in my website as blog posts, let's just start from scratch.
+
+Well... not scratch.
+
+# gastby develop
+
+Who chose such an easy to mistype name?  I hit Ga**s**tby every time without fail.  At least I can rebrand it as `yarn develop`, I guess.
+
+Y'know what I also manage to do?  Miss re-importing my Sass when I move from using a root page and a Router to defining each page individually.  And the documentation still calls out the old method of Layout components in some places, so that didn't help.
+
+I probably at this point should've just taken [the starter-blog project](https://github.com/gatsbyjs/gatsby-starter-blog) and started pulling things in.  But I was convinced to do it more independently (aka just read through the Gastby docs until i figure it out).  So I took my [Hooks-based-`require`-blog component](https://github.com/JohnSBarden/personal-website/blob/0f6e4689a395888d12cc3c80b6ce60c256ce51aa/src/Components/Blog/Blog.jsx) and flipped it into something that queries the body from MDX using graphql.  It turned out *mostly* the same, so there was nothing gained other than a little more knowledge of what's happening behind the scenes.  But that's the whole point of this! If I wanted a real blog, I'd just use Medium or Wordpress or Friendster.

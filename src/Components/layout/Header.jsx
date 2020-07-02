@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import "../styles/Border.scss";
+import "./Border.scss";
 
 function Header() {
   return (
@@ -8,7 +8,7 @@ function Header() {
       <Navbar>
         <Nav.Link href="/">
           <img
-            src={require("../resources/logo.jpg")}
+            src={require("../../resources/logo.jpg")}
             className="d-inline-block branding"
             alt="x"
           />
@@ -33,4 +33,4 @@ function Header() {
   );
 }
 
-export default Header;
+export { Header };
