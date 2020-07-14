@@ -3,10 +3,6 @@ import { Button } from "react-bootstrap";
 import { stripIndent } from "react-codepen-prefill-embed";
 import "./Resume.scss";
 
-// Had the content declared here, but
-// Right now they don't render when passing into a child component.
-// Gonna try to move to markdown before long.
-
 export function Content(props) {
 
   function handleClick() {

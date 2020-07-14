@@ -1,7 +1,7 @@
 import React from "react";
 import { MyCarousel } from "../Components/Carousel/Carousel";
 import { Col, Row } from "react-bootstrap";
-import Blog from "../components/blog/Blog";
+import blog from "../components/blog/Blog";
 import Layout from "../components/layout/Layout";
 import { graphql, Link } from 'gatsby';
 

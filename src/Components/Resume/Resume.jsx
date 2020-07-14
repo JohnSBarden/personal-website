@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import * as Content from "./Content";
+import { Content } from "./Content";
 
 const schoolContent =
   "I attended the University of Missouri-Columbia, graduating in December 2015 with a double major in Electrical and Computer Engineering and minors in Math and Computer Science. I graduated with a 3.5 GPA.";
@@ -31,12 +31,11 @@ export default function Professional() {
 
   const schoolTitle = "School", workTitle = "Work Experience", techTitle = "Technologies";
 
-
   return (
     <div className="resume">
-      <Content.Content title={schoolTitle} contents={schoolContent} active={activeContent} callback={callback} />
-      <Content.Content title={workTitle} contents={workExContent} active={activeContent} callback={callback} />
-      <Content.Content title={techTitle} contents={techList} active={activeContent} callback={callback} />
+      <Content title={schoolTitle} contents={schoolContent} active={activeContent} callback={callback} />
+      <Content title={workTitle} contents={workExContent} active={activeContent} callback={callback} />
+      <Content title={techTitle} contents={techList} active={activeContent} callback={callback} />
     </div>
   );
 }
