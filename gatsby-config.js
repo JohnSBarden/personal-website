@@ -15,6 +15,13 @@ module.exports = {
         name: `pages`,
         path: `${__dirname}/src/components/blog/posts/`
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/layout/Layout.jsx`),
+      }
+    },
+    `gatsby-plugin-react-helmet`
   ]
 }
