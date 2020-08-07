@@ -21,7 +21,6 @@ module.exports = {
       options: {
         component: require.resolve(`./src/components/layout/Layout.jsx`),
       }
-    },
-    `gatsby-plugin-react-helmet`
+    }
   ]
 }

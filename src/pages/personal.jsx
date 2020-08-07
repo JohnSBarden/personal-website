@@ -9,19 +9,17 @@ export default function Personal({ data }) {
   const { edges: posts } = data.allMdx;
 
   return (
-    <Row id="main-body">
-      <Col>
-        {posts.map(({ node }, index) => (
-          index == 0 ? <Blog id={node.id} data={{ mdx: node }} /> :
-            <div key={node.id}>
-              <h3>
-                {node.frontmatter.title} — {node.frontmatter.date}
-              </h3>
-              <Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link>
-            </div>
-        ))}
-      </Col>
-    </Row>
+    <div id="main-body">
+      {posts.map(({ node }, index) => (
+        index == 0 ? <Blog id={node.id} data={{ mdx: node }} /> :
+          <div key={node.id}>
+            <h3>
+              {node.frontmatter.title} — {node.frontmatter.date}
+            </h3>
+            <Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link>
+          </div>
+      ))}
+    </div>
   );
 }
 

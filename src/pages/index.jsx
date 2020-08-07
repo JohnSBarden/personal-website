@@ -6,18 +6,16 @@ import Layout from "../components/layout/Layout";
 
 export default function Index() {
   return (
-    <Layout id="home">
-      <div id="main-body">
-        <p className="blurb">
-          Welcome to my personal website! I wanted to write enough React to
+    <div id="main-body">
+      <p className="blurb">
+        Welcome to my personal website! I wanted to write enough React to
         have a place to mess around with javascript. <br />I'll use my{" "}
-          <a href="/personal" /*style={linkStyle}*/>
-            Personal Tab
+        <a href="/personal" /*style={linkStyle}*/>
+          Personal Tab
         </a>{" "}
         as a blog if you want to follow what I'm doing.
         </p>
-        <MyCarousel />
-      </div>
-    </Layout>
+      <MyCarousel />
+    </div>
   );
 }
