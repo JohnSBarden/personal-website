@@ -1,7 +1,7 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
   const path = require("path")
-  const blogPostTemplate = path.resolve(`./src/components/blog/Blog.jsx`)
+  const blogPostTemplate = path.resolve(`./src/components/Blog/Blog.jsx`)
   const result = await graphql(`
     {
       allMdx(
