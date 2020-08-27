@@ -14,15 +14,15 @@ export default function Blog({ data }) {
   // const paginationBasic = (
   //   <Pagination></Pagination>
   // );
-  return (
-    <Layout>
-      <div id="blog-post">
-        <h1>{data.mdx.frontmatter.title}</h1>
-        <MDXProvider >
-          <MDXRenderer>{data.mdx.body}</MDXRenderer>
-        </MDXProvider>
-      </div>
-    </Layout>
+  return (<div id="main-body">
+
+    <div id="blog-post">
+      <h1>{data.mdx.frontmatter.title}</h1>
+      <MDXProvider >
+        <MDXRenderer>{data.mdx.body}</MDXRenderer>
+      </MDXProvider>
+    </div>
+  </div>
   );
 }
 export const query = graphql`

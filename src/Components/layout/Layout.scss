@@ -29,13 +29,13 @@ code {
   background-color: $dark;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: $light;
   padding-top: $header-height + 1.5rem;
-  padding-bottom: $footer-height + 0.5rem;
+  padding-bottom: $footer-height + 1.5rem;
   max-width:100%;
   min-width:100%
 }
@@ -60,30 +60,17 @@ a:visited  {
   color: $accent2;
 }
 
-#intro,
-#main-body,
-#main-body > .col {
+#main-body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0.2rem;
+  padding: 2rem;
   width:100%;
 }
 
-.main-column{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.2rem;
-
-}
-
-#blurb {
+#intro, .blurb {
   font-size: 1.5rem;
+  max-width: 40rem;
 }
 
-.resume {
-  align-items: center;
-  white-space: pre-wrap;
-  font-size: 1rem;
-}
