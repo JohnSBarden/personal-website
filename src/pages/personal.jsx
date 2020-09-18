@@ -1,8 +1,5 @@
 import React from "react";
-import { MyCarousel } from "../Components/Carousel/Carousel";
-import { Col, Row } from "react-bootstrap";
 import Blog from "../components/Blog/Blog";
-import Layout from "../components/layout/Layout";
 import { graphql, Link } from 'gatsby';
 
 export default function Personal({ data }) {
