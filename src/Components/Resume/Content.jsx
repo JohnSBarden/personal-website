@@ -12,11 +12,11 @@ export function Content(props) {
   const display = props.active === props.title;
 
   return (
-    <div>
+    <div className="content">
       <Button onClick={handleClick} className="experience-button">
         {props.title}
       </Button>
-      {display && <p>{props.contents}</p>}
+      {display && <p className="content-text">{props.contents}</p>}
     </div>
   );
 }

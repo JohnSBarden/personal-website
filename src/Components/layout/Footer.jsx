@@ -2,6 +2,7 @@ import React from "react";
 import {
   faLinkedin,
   faGithub,
+  faGitlab,
   faTwitter,
   faCodepen,
 } from "@fortawesome/free-brands-svg-icons";
@@ -26,6 +27,12 @@ function Footer() {
         url="https://github.com/JohnSBarden/"
         icon={faGithub}
         text="Code with me on GitHub"
+        className="header-link link"
+      />
+      <SocialBadge
+        url="https://gitlab.com/JohnSBarden/"
+        icon={faGitlab}
+        text="Code with me on Gitlab"
         className="header-link link"
       />
       <SocialBadge

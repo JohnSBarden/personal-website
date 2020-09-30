@@ -74,3 +74,11 @@ a:visited  {
   max-width: 40rem;
 }
 
+
+.professional-intrigue {
+  > *{
+    padding: 2rem;
+  }
+    display: flex;
+    flex-direction: row;
+}

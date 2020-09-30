@@ -20,7 +20,7 @@ const techList = [
   "MongoDB",
   "OpenAPI",
   "GitHub"
-].join("\n");
+].join(" \n");
 
 export default function Professional() {
   function callback(title) {
