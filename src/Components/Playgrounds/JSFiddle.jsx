@@ -1,3 +1,3 @@
 var note =
-  "We don't use jsfiddle right now 🙁.  \
+  "I don't use jsfiddle right now 🙁.  \
   Embedding is a 💰Premium💰 feature.";

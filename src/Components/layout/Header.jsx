@@ -1,5 +1,10 @@
 import React from "react";
+import {
+  faDiceD20
+} from "@fortawesome/free-solid-svg-icons";
 import { Navbar, Nav } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import "./Border.scss";
 
 function Header() {
@@ -9,21 +14,27 @@ function Header() {
         <Nav.Link href="/">
           <img
             src={require("../../resources/logo.jpg")}
-            className="d-inline-block branding"
+            className="branding"
             alt="x"
           />
         </Nav.Link>
-        <Nav.Link class-name="d-inline-block" href="/">
-          <div className="header-link link">John S. Barden</div>
+        <Nav.Link href="/">
+          <div className="header-link">John S. Barden</div>
         </Nav.Link>
-        <Nav.Link class-name="d-inline-block" href="/personal">
-          <div className="header-link link">Personal</div>
+        <Nav.Link href="/personal">
+          <div className="header-link">Personal</div>
         </Nav.Link>
-        <Nav.Link class-name="d-inline-block" href="/professional">
-          <div className="header-link link">Professional</div>
+        <Nav.Link href="/professional">
+          <div className="header-link">Professional</div>
         </Nav.Link>
-        <Nav.Link class-name="d-inline-block" href="/media">
-          <div className="header-link link">Media</div>
+        <Nav.Link href="/media">
+          <div className="header-link">Media</div>
+        </Nav.Link>
+        <Nav.Link href="http://foundry.johnsbarden.com"
+          target="_blank"
+          rel="noopener noreferrer">
+          <div className="header-link"><FontAwesomeIcon icon={faDiceD20} fontSize={'10rem'}
+          /> Foundry</div>
         </Nav.Link>
         {/*<Form>
           <Form.Check type="switch" id="dark-mode-switch" label="Dark Mode" />
