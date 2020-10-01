@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import { stripIndent } from "react-codepen-prefill-embed";
 import "./Resume.scss";
+import { CSSTransitionGroup } from 'react-transition-group';
 
 export function Content(props) {
 
@@ -9,14 +10,22 @@ export function Content(props) {
     props.callback(props.title);
   }
 
-  const display = props.active === props.title;
+  var display = props.active === props.title;
 
   return (
     <div className="content">
       <Button onClick={handleClick} className="experience-button">
         {props.title}
       </Button>
-      {display && <p className="content-text">{props.contents}</p>}
+      <CSSTransitionGroup
+        transitionName="fade"
+        transitionAppearTimeout={500}
+        transitionEnterTimeout={500}
+        transitionLeaveTimeout={500}
+        transitionEnter={true}
+        transitionLeave={true}>
+        {display && <p className="content-text" key={0}>{props.contents}</p>}
+      </CSSTransitionGroup>
     </div>
   );
 }
