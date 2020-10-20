@@ -7,7 +7,7 @@ import { Container } from "react-bootstrap";
 
 export default function Layout({ children }) {
   return (
-    <Container className="layout" >
+    <Container className="layout">
       <Header></Header>
       {children}
       <Footer></Footer>
