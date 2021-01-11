@@ -15,6 +15,7 @@ function MyCarousel() {
     "https://imgur.com/krlIdsU.jpg",
     "https://imgur.com/5Wvz7sc.jpg",
     "https://imgur.com/CnJkCDN.jpg",
+    "https://imgur.com/xfdNTY8.jpg",
   ];
 
   return (
@@ -38,6 +39,9 @@ function MyCarousel() {
           src={links[3]}
           alt="Sporting KC launch party 2020"
         />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block w-100" src={links[4]} alt="Minerva & Maxine" />
       </Carousel.Item>
     </Carousel>
   );
