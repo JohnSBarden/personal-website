@@ -1,5 +1,5 @@
 import React from "react";
-import Blog from "../components/Blog/Blog";
+import Blog from "../Components/Blog/Blog";
 import { graphql, Link } from "gatsby";
 
 export default function Personal({ data }) {

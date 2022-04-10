@@ -6,7 +6,7 @@ module.exports = {
       options: {
         extensions: [".mdx", ".md"],
         defaultLayouts: {
-          default: require.resolve("./src/components/layout/Layout.js"),
+          default: require.resolve("./src/Components/layout/Layout.js"),
         },
       },
     },
@@ -14,13 +14,13 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/components/blog/posts/`,
+        path: `${__dirname}/src/Components/Blog/posts/`,
       },
     },
     {
       resolve: `gatsby-plugin-layout`,
       options: {
-        component: require.resolve(`./src/components/layout/Layout.js`),
+        component: require.resolve(`./src/Components/layout/Layout.js`),
       },
     },
     `gatsby-plugin-react-helmet`,

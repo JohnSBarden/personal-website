@@ -1,13 +1,10 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
-  const path = require("path")
-  const blogPostTemplate = path.resolve(`./src/components/Blog/Blog.jsx`)
+  const { createPage } = actions;
+  const path = require("path");
+  const blogPostTemplate = path.resolve(`./src/Components/Blog/Blog.jsx`);
   const result = await graphql(`
     {
-      allMdx(
-        sort: { order: ASC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
+      allMdx(sort: { order: ASC, fields: [frontmatter___date] }, limit: 1000) {
         edges {
           node {
             id
@@ -18,12 +15,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         }
       }
     }
-  `)
+  `);
   // Handle errors
   if (result.errors) {
-    reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query')
+    reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query');
   }
-
 
   result.data.allMdx.edges.forEach(({ node }, index) => {
     createPage({
@@ -35,6 +31,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       // You can use the values in this context in
       // our page layout component
       context: { id: node.id },
-    })
-  })
-}
+    });
+  });
+};
